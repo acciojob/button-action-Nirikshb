@@ -5,7 +5,8 @@ function App() {
   return (
     <div id="main">
       // Do not alter the main div
-      <button>Click Me</button>
+      <p>This a para</p>
+      <button id="button">Click Me</button>
     </div>
   );
 }
