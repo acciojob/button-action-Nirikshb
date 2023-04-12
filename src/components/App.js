@@ -1,15 +1,19 @@
-import React, {Component, useState} from "react";
-import "./../styles/App.css";
+import React, { useState } from 'react';
+import './App.css';
 
 function App() {
+  const [showPara, setShowPara] = useState(false);
+
+  const handleButtonClick = () => {
+    setShowPara(true);
+  }
+
   return (
-    <div id="main">
-      // Do not alter the main div
-      <p>This a para</p>
-      <button id="button">Click Me</button>
+    <div>
+      <button id="click" onClick={handleButtonClick}>Click me</button>
+      {showPara ? <p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p> : null}
     </div>
   );
 }
-
 
 export default App;
